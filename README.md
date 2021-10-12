@@ -1,0 +1,1 @@
+The second version of the official website of the Entrepreneurship Cell of MIT, Manipal
