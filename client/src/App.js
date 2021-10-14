@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LandingPage from "./pages/landingPage"; 
 import ResourcesPage from "./pages/resourcesPage";
 import HallOfFamePage from "./pages/hallOfFame";
+import BlogPins from "./pages/blogPins";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route exact path="/" component={LandingPage}></Route>
           <Route exact path="/hall-of-fame" component={HallOfFamePage}></Route>
           <Route exact path="/resources" component={ResourcesPage}></Route>
+          <Route exact path="/blog" component={BlogPins}></Route>
         </Switch>
       </Router>
     </div>
