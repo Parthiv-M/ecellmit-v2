@@ -6,4 +6,9 @@ router.get("/alumni/:year", (req, res) => {
     
 })
 
+// route to add hall of fame members' details
+router.post("/alumni", (req, res) => {
+
+})
+
 module.exports = router

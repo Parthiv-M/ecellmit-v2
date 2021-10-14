@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const connectDB = require("./utils/connectDb");
+
+connectDB();
 
 const port = process.env.PORT || 3001;
 

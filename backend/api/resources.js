@@ -6,4 +6,9 @@ router.get("/:type", (req, res) => {
     
 })
 
+// route to add resources
+router.post("/", (req, res) => {
+    
+})
+
 module.exports = router

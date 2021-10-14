@@ -6,4 +6,9 @@ router.get("/board", (req, res) => {
     
 })
 
+// route to add board members' details
+router.post("/board", (req, res) => {
+    
+})
+
 module.exports = router
