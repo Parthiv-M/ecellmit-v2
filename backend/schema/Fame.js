@@ -9,6 +9,12 @@ const Fame = new Schema({
     logo: {
         type: String,
     },
+
+    year: {
+        type: Number
+    },
+
+
     founderName: {
         type: String,
         required: true
