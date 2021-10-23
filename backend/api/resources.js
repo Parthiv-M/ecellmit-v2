@@ -3,8 +3,15 @@ const router = express.Router();
 
 // route to fetch resources details by resource type
 router.get("/:type", (req, res) => {
+
+    let type = req.params.type;
+    Resouces.findByType(type, function(err,info){
+        res.json(info);
+    });
+
+
     
-})
+});
 
 // route to add resources
 router.post("/", (req, res) => {

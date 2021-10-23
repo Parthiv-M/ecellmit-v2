@@ -3,6 +3,11 @@ const router = express.Router();
 
 // route to fetch hall of fame members' details
 router.get("/alumni/:year", (req, res) => {
+
+    let type = req.params.year;
+    Resouces.findByType(type, function(err,info){
+        res.json(info);
+    });
     
 })
 
