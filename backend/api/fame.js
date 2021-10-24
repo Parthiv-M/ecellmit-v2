@@ -36,10 +36,10 @@ router.post("/alumni", (req, res) => {
             social: req.body.social,
         });
         fame.save().then(() => {
-            res.status(200).send({ success: true, message: "Added new resource" });
+            res.status(200).send({ success: true, message: "Added new famous alumini" });
         }).catch((err) => {
             console.log(err);
-            res.status(400).send({ success: false, message: "Error fetching resource" });
+            res.status(400).send({ success: false, message: "Error fetching famous alumini" });
         })  
     } catch (error) {
         res.status(500).send({ success: false, message: "Server error" })
