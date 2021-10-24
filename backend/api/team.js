@@ -6,28 +6,44 @@ const router = express.Router();
 // route to fetch board members' details
 router.get("/board", (req, res) => {
 
-    Team.find((function(err,info){
-        if(err){
-            console.log(err);
+    try {
+        let reso = await Team.find({
+            
+        });
+
+        if(!reso) {
+            res.status(401).send({ success: false, message: "Invalid category" });
         }
-        else
-        res.json(info);
-    }))
+
+        res.status(200).send({ success: true, data: reso });
+    } catch (error) {
+        res.status(500).send({ success: false, message: "Server error" })
+    }
+
+    
     
 })
 
 // route to add board members' details
 router.post("/board", (req, res) => {
 
-    let info = new Team(req.body);
-    info.save()
-    .then( info => {
-        res.status(200).json({'info':'info added'});
-    }    )
-
-    .catch(err =>{
-        res.status(400).send('adding fail');
-    });
+    try {
+        let team = new Team({
+            name: req.body.name,
+            position: req.body.position,
+            photo: req.body.photo,
+            social: req.body.social,
+            
+        });
+        team.save().then(() => {
+            res.status(200).send({ success: true, message: "Added new Team" });
+        }).catch((err) => {
+            console.log(err);
+            res.status(400).send({ success: false, message: "Error fetching Team" });
+        })  
+    } catch (error) {
+        res.status(500).send({ success: false, message: "Server error" })
+    }
     
 });
 
