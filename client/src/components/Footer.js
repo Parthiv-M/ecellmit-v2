@@ -8,24 +8,24 @@ const Footer = () => {
             <div className="row m-0 row-cols-md-3 row-cols-1 container-fluid" style={{ backgroundColor: "#0E0E0E", minHeight: "30vh" }}>
                 <div className="row row-cols-2 p-5 mx-auto">
                     <div className="col d-flex flex-column align-items-center justify-content-center">
-                        <Link href="/" className="text-white" style={{ fontSize: "1.2rem" }}>
+                        <Link to="/" className="text-white" style={{ fontSize: "1.2rem" }}>
                             <p>Home</p>
                         </Link>
-                        <Link href="/blogs" className="text-white" style={{ fontSize: "1.2rem" }}>
+                        <Link to="/blogs" className="text-white" style={{ fontSize: "1.2rem" }}>
                             <p>Blogs</p>
                         </Link>
-                        <Link href="/blogs" className="text-white" style={{ fontSize: "1.2rem" }}>
+                        <Link to="/resources" className="text-white" style={{ fontSize: "1.2rem" }}>
                             <p>Resources</p>
                         </Link>
                     </div>
                     <div className="col d-flex flex-column align-items-center justify-content-center">
-                        <Link href="/team" className="text-white" style={{ fontSize: "1.2rem" }}>
+                        <Link to="/team" className="text-white" style={{ fontSize: "1.2rem" }}>
                             <p>Team</p>
                         </Link>
-                        <Link href="/blogs" className="text-white" style={{ fontSize: "1.2rem" }}>
+                        <Link to="/blog" className="text-white" style={{ fontSize: "1.2rem" }}>
                             <p>Brochure</p>
                         </Link>
-                        <Link href="/wall-of-fame" className="text-white" style={{ fontSize: "1.2rem" }}>
+                        <Link to="/wall-of-fame" className="text-white" style={{ fontSize: "1.2rem" }}>
                             <p>Wall Of Fame</p>
                         </Link>
                     </div>

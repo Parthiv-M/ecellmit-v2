@@ -1,0 +1,28 @@
+.res-card {
+    height: 300px;
+}
+
+.res-image {
+    width: 65%;
+}
+
+.res-wrapper {
+    width: 75%;
+}
+
+.res-link:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+@media only screen and (max-width: 800px)   {
+    .res-card {
+        height: auto;
+    }
+    .res-image {
+        width: 100%;
+    }
+    .res-wrapper {
+        width: 100%;
+    }
+}
