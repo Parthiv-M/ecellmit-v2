@@ -10,7 +10,7 @@ const Fame = new Schema({
         type: String,
     },
     founderName: {
-        type: String,
+        type: Array,
         required: true
     },
     position: {
