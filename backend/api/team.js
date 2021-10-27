@@ -1,3 +1,4 @@
+const { Router } = require("express");
 const express = require("express");
 const Team = require("../schema/Team");
 const router = express.Router();
@@ -35,15 +36,15 @@ router.post("/board", (req, res) => {
             
         });
         team.save().then(() => {
-            res.status(200).send({ success: true, message: "Added new team" });
+            res.status(200).send({ success: true, message: "Added new Team" });
         }).catch((err) => {
             console.log(err);
-            res.status(400).send({ success: false, message: "Error fetching team" });
+            res.status(400).send({ success: false, message: "Error fetching Team" });
         })  
     } catch (error) {
         res.status(500).send({ success: false, message: "Server error" })
     }
     
-})
+});
 
 module.exports = router
