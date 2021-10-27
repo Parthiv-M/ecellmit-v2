@@ -10,6 +10,7 @@ const port = process.env.PORT || 3001;
 app.use(cors())
 app.use(express.json({ extended: false }));
 
+app.use("/api/alum", require("./api/blog"))
 
 app.use("/api/alum", require("./api/alum"))
 
