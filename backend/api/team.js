@@ -1,5 +1,6 @@
 const express = require("express");
 const Team = require("../schema/Team");
+
 const router = express.Router();
 
 // route to fetch board members' details

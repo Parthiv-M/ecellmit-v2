@@ -9,24 +9,17 @@ const Fame = new Schema({
     logo: {
         type: String,
     },
-    founderName: {
-        type: Array,
-        required: true
-    },
-    position: {
-        type: String,
-        required: true
-    },
-    photo: {
-        type: String,
-        default: "",
-    },
-    social: {
-        instagram: String,
-        linkedin: String,
-        email: String,
-        website: String
-    }
+    website: String,
+    founders: [{
+        name: {
+            type:String,
+            required: true
+        },
+        linkedin: {
+            type:String,
+            required: true
+        } 
+    }],
 });
 
 module.exports = fame = mongoose.model('Fame', Fame);

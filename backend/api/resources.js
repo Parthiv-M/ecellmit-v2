@@ -1,5 +1,6 @@
 const express = require("express");
 const Resources = require("../schema/Resources");
+
 const router = express.Router();
 
 // route to fetch resources details by resource type

@@ -1,9 +1,10 @@
 const express = require("express");
 const Fame = require("../schema/Fame");
+
 const router = express.Router();
 
 // route to fetch hall of fame members' details
-router.get("/fame/:year", async (req, res) => {
+router.get("/:year", async (req, res) => {
     try {
         let fame = await Fame.find({
             year: req.params.year
@@ -20,21 +21,19 @@ router.get("/fame/:year", async (req, res) => {
 })
 
 // route to add hall of fame members' details
-router.post("/fame", (req, res) => {
+router.post("/", (req, res) => {
     try {
         let fame = new Fame({
             startup: req.body.startup,
             logo: req.body.logo,
-            founderName: req.body.founderName,
-            position: req.body.position,
-            photo: req.body.photo,
-            social: req.body.social,
+            founders: req.body.founders,
+            website: req.body.website,
         });
         fame.save().then(() => {
-            res.status(200).send({ success: true, message: "Added new alumni" });
+            res.status(200).send({ success: true, message: "Added new wall of fame entry" });
         }).catch((err) => {
             console.log(err);
-            res.status(400).send({ success: false, message: "Error fetching alumni" });
+            res.status(400).send({ success: false, message: "Error fetching wall of fame" });
         })  
     } catch (error) {
         res.status(500).send({ success: false, message: "Server error" })

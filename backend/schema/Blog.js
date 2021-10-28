@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const Blog = new Schema({
-    article: {
+    articleName: {
         type: String,
         required: true
     },
@@ -16,7 +16,8 @@ const Blog = new Schema({
     },
     date: {
         type: Date,
-        required: true
+        required: true,
+        default: Date.now()
     },
     url: {
         type: String,

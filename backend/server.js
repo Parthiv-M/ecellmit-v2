@@ -12,9 +12,13 @@ app.use(express.json({ extended: false }));
 
 app.use("/api/team", require("./api/team"))
 
+app.use("/api/alumni", require("./api/alumni"))
+
 app.use("/api/resources", require("./api/resources"))
 
 app.use("/api/fame", require("./api/fame"))
+
+app.use("/api/blog", require("./api/blog"))
 
 // listens to the app on PORT
 app.listen(port, () => {
