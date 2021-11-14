@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom"
+import Loader from "../components/Loader/Loader";
 import ResourceCard from "../components/ResourceCard/ResourceCard";
 
 const ResourcePage = () => {
@@ -43,7 +44,7 @@ const ResourcePage = () => {
                     </Link>
                 </div>
                 <div className="container mx-auto text-left">
-                    <p className="black-text p-0 m-0 display-3">{typetoPathObj[0].path.split("")[0].toUpperCase() + typetoPathObj[0].path.slice(1)}</p>
+                    <p className="black-text p-0 m-0" style={{ fontSize: "4rem" }}>{typetoPathObj[0].path.split("")[0].toUpperCase() + typetoPathObj[0].path.slice(1)}</p>
                     <p className="regular-text p-0 mx-0" style={{ fontSize: "1.8rem", marginTop: "-5px", color: "#5CE1E6" }}>{typetoPathObj[0].tagline}</p>
                 </div>  
                 <div className="d-flex flex-column mx-auto h-full mx-1 my-3 px-md-5 px-2 res-wrapper">
@@ -52,7 +53,7 @@ const ResourcePage = () => {
                         resources.map((data) => {
                             return <ResourceCard data={data}/> 
                         }) 
-                        : ""
+                        : <Loader />
                     }                         
                 </div>
             </div>

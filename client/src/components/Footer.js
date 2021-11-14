@@ -11,7 +11,7 @@ const Footer = () => {
                         <Link to="/" className="text-white" style={{ fontSize: "1.2rem" }}>
                             <p>Home</p>
                         </Link>
-                        <Link to="/blogs" className="text-white" style={{ fontSize: "1.2rem" }}>
+                        <Link to="/blog" className="text-white" style={{ fontSize: "1.2rem" }}>
                             <p>Blogs</p>
                         </Link>
                         <Link to="/resources" className="text-white" style={{ fontSize: "1.2rem" }}>
@@ -19,12 +19,12 @@ const Footer = () => {
                         </Link>
                     </div>
                     <div className="col d-flex flex-column align-items-center justify-content-center">
-                        <Link to="/team" className="text-white" style={{ fontSize: "1.2rem" }}>
-                            <p>Team</p>
+                        <Link to="/alumni" className="text-white" style={{ fontSize: "1.2rem" }}>
+                            <p>Alumni</p>
                         </Link>
-                        <Link to="/blog" className="text-white" style={{ fontSize: "1.2rem" }}>
+                        <a target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1Gayd0kulzgSqBfH21i5nl09gwfVnXovp/view?usp=sharing" className="text-white" style={{ fontSize: "1.2rem" }}>
                             <p>Brochure</p>
-                        </Link>
+                        </a>
                         <Link to="/wall-of-fame" className="text-white" style={{ fontSize: "1.2rem" }}>
                             <p>Wall Of Fame</p>
                         </Link>
@@ -36,7 +36,11 @@ const Footer = () => {
                 <div className="d-flex flex-column justify-content-center align-items-md-start align-items-center text-white text-center p-3">
                     <h2>The Entrepreneurship Cell</h2>
                     <h3>MIT, Manipal</h3>
-                    <p style={{ fontSize: "1.4rem" }}>© 2021</p>
+                    <div className="d-flex align-items-center">
+                        <a href="/dev-team" style={{ fontSize: "1.2rem", color: "#5CE1E6" }}>Made at E-Cell</a>
+                        <p className="pt-1 mx-2 my-0" style={{ fontSize: "1.8rem" }}>©</p>
+                        <p style={{ fontSize: "1.4rem" }} className="m-0"> 2021</p>
+                    </div>
                 </div>
             </div>
         </footer>

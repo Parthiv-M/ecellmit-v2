@@ -1,8 +1,19 @@
 import React from "react"
 import { Link } from "react-router-dom";
+import { useSpring, animated } from "react-spring";
 
 
 const ResourceTile = ({type, image}) => {
+
+    const slideSpring = useSpring({
+        delay: 10,
+        transform: "translateY(0px)",
+        opacity: 1,
+        from: {
+            opacity: 0,
+            transform: "translateY(50px)"
+        }   
+    })
 
     const onHover = () => {
         let overlay = document.getElementById(`overlay-${type}`); 
@@ -18,7 +29,7 @@ const ResourceTile = ({type, image}) => {
 
     return (
         <Link to={`/resources/${type.toLowerCase()}`}>
-            <div className="col my-3" style={{ cursor: "pointer" }} onMouseEnter={onHover} onMouseLeave={onUnHover}>
+            <animated.div className="col my-3" style={{ ...slideSpring, cursor: "pointer" }} onMouseEnter={onHover} onMouseLeave={onUnHover}>
                 <div className="w-100">
                     <div className="h-100 mx-auto d-none position-absolute overlay-card" style={{ width: "91.5%" }} id={`overlay-${type}`}>
                         <div  
@@ -36,7 +47,7 @@ const ResourceTile = ({type, image}) => {
                         {type}
                     </div>
                 </div>
-            </div>
+            </animated.div>
         </Link>
     )
 }

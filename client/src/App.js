@@ -7,6 +7,10 @@ import ResourcesPage from "./pages/resourcesPage";
 import ResourcePage from "./pages/resourcePage";
 import HallOfFamePage from "./pages/hallOfFame";
 import BlogPins from "./pages/blogPins";
+import AlumniPage from './pages/alumniPage';
+import DevTeam from "./pages/devTeam";
+
+// importing components
 import NavBar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -17,10 +21,12 @@ function App() {
         <NavBar/>
         <Switch>
           <Route exact path="/" component={LandingPage}></Route>
-          <Route exact path="/wall-of-fame" component={HallOfFamePage}></Route>
-          <Route exact path="/resources" component={ResourcesPage}></Route>
-          <Route exact path="/resources/:type" component={ResourcePage}></Route>
-          <Route exact path="/blog" component={BlogPins}></Route>
+          <Route path="/wall-of-fame" component={HallOfFamePage}></Route>
+          <Route path="/alumni" component={AlumniPage}></Route>
+          <Route path="/resources/:type" component={ResourcePage}></Route>
+          <Route path="/resources" component={ResourcesPage}></Route>
+          <Route path="/blog" component={BlogPins}></Route>
+          <Route path="/dev-team" component={DevTeam}></Route> 
         </Switch>
         <Footer />
       </Router>
