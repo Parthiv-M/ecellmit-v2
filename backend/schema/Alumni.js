@@ -2,6 +2,10 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const Alumni = new Schema({
+    sortOrder: {
+        type: Number,
+        required: true
+    },
     name: {
         type: String,
         required: true

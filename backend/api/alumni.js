@@ -8,7 +8,7 @@ router.get("/:year", async (req, res) => {
     try {
         let alumni = await Alumni.find({
             year: req.params.year
-        });
+        }).sort({ sortOrder: 1 });
 
         if(!alumni) {
             res.status(401).send({ success: false, message: "No Alumni found" });
