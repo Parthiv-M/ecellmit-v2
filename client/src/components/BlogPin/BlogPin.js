@@ -3,7 +3,7 @@ import "./BlogPin.css"
 
 const BlogPin = () => {
     return (
-        <div className="col-md-5 col-lg-4 col-12 blog-pin text-white">
+        <div className="col-md-5 col-lg-4 col-12 p-md-3 blog-pin text-white">
             <div className="d-flex flex-column justify-content-center my-3">
                 <div className="d-flex flex-xl-row flex-column">
                     <img className="blog-image px-md-2 py-1" src="https://i.pinimg.com/736x/9d/18/35/9d183514b670677699323c9033b38d91.jpg" alt="Blog cover" />
@@ -25,8 +25,8 @@ const BlogPin = () => {
                     </div>
                 </div>
                 <div className="px-md-2 my-2" style={{ height: "1px", backgroundColor: "#1b1b1b" }}></div>
-                <p className="m-0 px-md-2" style={{ color: "#5CE1E6", fontSize: "1.6rem", fontWeight: "bold" }}>An Excerpt</p>
-                <p className="my-1 px-md-2">
+                <p className="m-0 px-md-2 text-left" style={{ color: "#5CE1E6", fontSize: "1.6rem", fontWeight: "bold" }}>An Excerpt</p>
+                <p className="my-1 px-md-2 text-left">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
                     dolore eu fugiat nulla pariatur exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 

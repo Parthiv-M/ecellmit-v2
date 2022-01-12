@@ -28,6 +28,7 @@ const ResourcePage = () => {
             .then((res) => res.json())
             .then((data) => {
                 setResources(data.data)
+                console.log(data.data)
                 setLoading(false)
             })
     }, [typetoPathObj])

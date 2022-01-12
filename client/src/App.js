@@ -13,6 +13,7 @@ import DevTeam from "./pages/devTeam";
 // importing components
 import NavBar from './components/Navbar';
 import Footer from './components/Footer';
+import TeamPage from './pages/teamPage';
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
         <NavBar/>
         <Switch>
           <Route exact path="/" component={LandingPage}></Route>
-          <Route path="/wall-of-fame" component={HallOfFamePage}></Route>
-          <Route path="/alumni" component={AlumniPage}></Route>
+          {/* <Route path="/wall-of-fame" component={HallOfFamePage}></Route> */}
+          <Route path="/team" component={TeamPage}></Route>
+          {/* <Route path="/alumni" component={AlumniPage}></Route> */}
           <Route path="/resources/:type" component={ResourcePage}></Route>
           <Route path="/resources" component={ResourcesPage}></Route>
           <Route path="/blog" component={BlogPins}></Route>

@@ -7,7 +7,7 @@ const BlogPins = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch(`${process.env.REACT_APP_SERVER_URL}/api/blogs`)
+        fetch(`${process.env.REACT_APP_SERVER_URL}/api/blog`)
             .then((res) => res.json())
             .then((data) => {
                 setBlogs(data.data)
