@@ -7,7 +7,7 @@ const Footer = () => {
         <footer>
             <div className="row m-0 row-cols-md-3 row-cols-1 container-fluid" style={{ backgroundColor: "#0E0E0E", minHeight: "30vh" }}>
                 <div className="row row-cols-2 p-5 mx-auto">
-                    <div className="col d-flex flex-column align-items-center justify-content-center">
+                    <div className="col d-flex flex-column align-items-center justify-content-center text-center">
                         <Link to="/" className="text-white" style={{ fontSize: "1.2rem" }}>
                             <p>Home</p>
                         </Link>
@@ -18,7 +18,7 @@ const Footer = () => {
                             <p>Resources</p>
                         </Link>
                     </div>
-                    <div className="col d-flex flex-column align-items-center justify-content-center">
+                    <div className="col d-flex flex-column align-items-center justify-content-center text-center">
                         <Link to="/alumni" className="text-white" style={{ fontSize: "1.2rem" }}>
                             <p>Alumni</p>
                         </Link>
@@ -34,8 +34,8 @@ const Footer = () => {
                     <img src={logo} alt="E-Cell logo" height={180}></img>
                 </div>
                 <div className="d-flex flex-column justify-content-center align-items-md-start align-items-center text-white text-center p-3">
-                    <h2>The Entrepreneurship Cell</h2>
-                    <h3>MIT, Manipal</h3>
+                    <h2 style={{ fontSize: "1.7rem" }}>The Entrepreneurship Cell</h2>
+                    <h3 style={{ fontSize: "1.5rem" }}>MIT, Manipal</h3>
                     <div className="d-flex align-items-center">
                         <a href="/dev-team" style={{ fontSize: "1.2rem", color: "#5CE1E6" }}>Made at E-Cell</a>
                         <p className="pt-1 mx-2 my-0" style={{ fontSize: "1.8rem" }}>©</p>

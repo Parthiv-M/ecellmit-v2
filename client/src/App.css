@@ -149,6 +149,7 @@ input:focus, textarea:focus {
 
 .dir-image {
     width: 35%;
+    height: 390px;
 }
 
 .blog-back {
@@ -165,6 +166,22 @@ input:focus, textarea:focus {
     background-repeat: no-repeat;
     min-height: 35vh;
 }
+
+.dev-container {
+    width: 75%;
+}
+
+.dev-back {
+    padding: 0.5rem 1rem;
+    color: #5CE1E6;
+    border: 2px solid #5CE1E6;
+    border-radius: 0.8rem;
+}
+
+.dev-back:hover { 
+    transform: translateY(0.5rem);
+    transition-duration: 500ms;
+} 
 
 @media only screen and (max-width: 800px) {
     .three-fourth-container {
@@ -186,7 +203,6 @@ input:focus, textarea:focus {
     .slanted-container div:nth-child(1) p:nth-child(1){
         font-size: 1.8rem;
     }
-    
     .slanted-container div:nth-child(1) p:nth-child(2){
         font-size: 2rem;
     }
@@ -202,5 +218,8 @@ input:focus, textarea:focus {
     }
     .alumni-back {
         background-image: none;
+    }
+    .dev-container {
+        width: 100%;
     }
 }
