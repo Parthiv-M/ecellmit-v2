@@ -11,7 +11,7 @@ const devs = [
         name: "Anirudh Murthy",
         bio: "Backend Developer",
         photo: "https://i.ibb.co/QXb1XDV/anirudh.jpg",
-        github: "https://github.com/anirudh123456197",
+        github: "https://github.com/itsani-cmd",
         instagram: "https://instagram.com/anirudh_murthy_"
     }
 ]

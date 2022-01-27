@@ -50,19 +50,23 @@ const NavBar = () => {
                     {/* <li className="nav-item">
                       <a className={`nav-link ${location.pathname === "/events" ? "active" : ""}`} aria-current="page" href="/events">Events</a>
                     </li> */}
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                       <a className={`nav-link ${location.pathname === "/blog" ? "active" : ""}`} aria-current="page" href="/blog">Blogs</a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
             </nav>
-            <div id="side" style={{ height: "100vh", width: "100vw", position: "fixed", top: 0, left: 0, backgroundColor: "rgba(0, 0, 0, 0.95)" }} className="d-none p-4 flex-column text-center align-items-center">
+            <div 
+              id="side" 
+              style={{ minHeight: "100vh", width: "100vw", position: "fixed", top: 0, left: 0, backgroundColor: "rgba(0, 0, 0, 0.95)", overflowY: "hidden" }} 
+              className="d-none p-4 flex-column text-center align-items-center"
+            >
               <div className="w-100 d-flex justify-content-end">
-                <i class="lni lni-close text-white font-weight-bold" onClick={toggleSideBar}></i>
+                <i className="lni lni-close text-white font-weight-bold" onClick={toggleSideBar}></i>
               </div>
               <div className="w-100 bg-white my-4" style={{ height: 1 }}></div>
-              <ul style={{ height: "100%" }} className="navbar-nav d-flex flex-column justify-content-center align-items-center mb-2 mb-lg-0">
+              <ul style={{ height: "50vh" }} className="navbar-nav d-flex flex-column justify-content-center align-items-center mb-2 mb-lg-0">
                 <li className="nav-item" style={{ fontSize: "1.3rem" }}>
                   <a style={{ color: "white" }} className="nav-link" aria-current="page" href="/">Home</a>
                 </li>
@@ -81,11 +85,12 @@ const NavBar = () => {
                 {/* <li className="nav-item" style={{ fontSize: "1.3rem" }}>
                   <a style={{ color: "white" }} className={`nav-link ${location.pathname === "/events" ? "active" : ""}`} aria-current="page" href="/events">Events</a>
                 </li> */}
-                <li className="nav-item" style={{ fontSize: "1.3rem" }}>
+                {/* <li className="nav-item" style={{ fontSize: "1.3rem" }}>
                   <a style={{ color: "white" }} className="nav-link" aria-current="page" href="/blog">Blogs</a>
-                </li>
+                </li> */}
               </ul>
-              <div className="w-100 bg-white my-4" style={{ height: 1 }}></div>
+              <img className="my-4" src={logo} alt="E-Cell Logo" height={100}></img>
+              {/* <div className="w-100 bg-white my-4" style={{ height: 1 }}></div> */}
             </div>
         </div>
     );

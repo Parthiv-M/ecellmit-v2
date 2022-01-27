@@ -44,4 +44,10 @@ a {
     .dev-image {
         height: 100px;
     }
+    .dev-name {
+        font-size: 1.4rem;
+    }
+    .dev-bio {
+        font-size: 1.1rem;
+    }
 }

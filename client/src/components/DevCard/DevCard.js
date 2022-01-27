@@ -8,10 +8,10 @@ const DevCard = (props) => {
     return (
         <div className="dev-card d-flex justify-content-between align-items-center">
             <img src={data.photo} alt={data.photo} className="dev-image"></img>
-            <div className="w-100 text-left px-3">
-                <h6 className="dev-name">{data.name}</h6>
-                <p className="dev-bio">{data.bio}</p>
-                <div className="d-flex flex-wrap">
+            <div className="w-100 text-left px-md-3 px-2">
+                <h6 className="dev-name px-md-0 px-2">{data.name}</h6>
+                <p className="dev-bio px-md-0 px-2">{data.bio}</p>
+                <div className="d-flex flex-wrap px-md-0 px-2">
                 {
                     data.github && 
                     <a href={data.github} target="_blank" rel="noreferrer">

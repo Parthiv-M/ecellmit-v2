@@ -6,28 +6,31 @@ const Footer = () => {
     return (
         <footer>
             <div className="row m-0 row-cols-md-3 row-cols-1 container-fluid" style={{ backgroundColor: "#0E0E0E", minHeight: "30vh" }}>
-                <div className="row row-cols-2 p-5 mx-auto">
-                    <div className="col d-flex flex-column align-items-center justify-content-center text-center">
+                <div className="row row-cols-2 p-5 mx-auto align-items-center">
+                    <div className="col d-flex flex-column align-items-center justify-content-center text-center" style={{ height: "fit-content", borderRight: "1px solid rgba(255, 255, 255, 0.4)" }}>
                         <Link to="/" className="text-white" style={{ fontSize: "1.2rem" }}>
                             <p>Home</p>
                         </Link>
-                        <Link to="/blog" className="text-white" style={{ fontSize: "1.2rem" }}>
+                        {/* <Link to="/blog" className="text-white" style={{ fontSize: "1.2rem" }}>
                             <p>Blogs</p>
-                        </Link>
+                        </Link> */}
                         <Link to="/resources" className="text-white" style={{ fontSize: "1.2rem" }}>
                             <p>Resources</p>
                         </Link>
                     </div>
-                    <div className="col d-flex flex-column align-items-center justify-content-center text-center">
-                        <Link to="/alumni" className="text-white" style={{ fontSize: "1.2rem" }}>
+                    <div className="col d-flex flex-column align-items-center justify-content-center text-center" style={{ height: "fit-content" }}>
+                        {/* <Link to="/alumni" className="text-white" style={{ fontSize: "1.2rem" }}>
                             <p>Alumni</p>
+                        </Link> */}
+                        <Link to="/team" className="text-white" style={{ fontSize: "1.2rem" }}>
+                            <p>Team</p>
                         </Link>
                         <a target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1Gayd0kulzgSqBfH21i5nl09gwfVnXovp/view?usp=sharing" className="text-white" style={{ fontSize: "1.2rem" }}>
                             <p>Brochure</p>
                         </a>
-                        <Link to="/wall-of-fame" className="text-white" style={{ fontSize: "1.2rem" }}>
+                        {/* <Link to="/wall-of-fame" className="text-white" style={{ fontSize: "1.2rem" }}>
                             <p>Wall Of Fame</p>
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
                 <div className="d-flex justify-content-center align-items-center p-2">    

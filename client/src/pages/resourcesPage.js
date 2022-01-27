@@ -14,8 +14,8 @@ const ResourcesPage = () => {
         <div className="w-full text-white py-4 px-md-5 min-vh-100 px-1">
             <div className="mx-auto d-flex flex-column text-center text-md-left">
                 <div className="w-75 mx-auto">
-                    <p className="black-text p-0 m-0" style={{ fontSize: "4rem" }}>Resources</p>
-                    <p className="regular-text p-0 mx-0" style={{ fontSize: "2rem", marginTop: "-5px" }}>Learn with E-Cell MIT</p>
+                    <p className="black-text p-0 m-0" style={{ fontSize: "3.5rem" }}>Resources</p>
+                    <p className="regular-text p-0 mx-0" style={{ fontSize: "1.5rem", marginTop: "-5px" }}>Learn with E-Cell MIT</p>
                 </div>  
                 <div className="row row-cols-md-4 row-cols-1 w-75 mx-auto justify-content-center h-full mx-1 my-1">
                     <ResourceTile type="Blogs" image={blog}/>

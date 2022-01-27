@@ -10,6 +10,14 @@
     width: 75%;
 }
 
+.res-text {
+    font-size: 1.4rem;
+}
+
+.res-link {
+    font-size: 1.4rem;
+}
+
 .res-link:hover {
     text-decoration: underline;
     color: white;
@@ -21,6 +29,12 @@
     }
     .res-image {
         width: 100%;
+    }
+    .res-link {
+        font-size: 1.2rem;
+    }
+    .res-text {
+        font-size: 1rem;
     }
     .res-wrapper {
         width: 100%;

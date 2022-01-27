@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react"
 import TeamCard from "../components/TeamCard"
 import Loader from "./../components/Loader/Loader"
 
+import { useSpring, animated } from "react-spring";
+
 const TeamPage = () => {
 
     const [team, setTeam] = useState([])
@@ -16,9 +18,18 @@ const TeamPage = () => {
             })
     }, [])
 
+    const slideSpring = useSpring({
+        transform: "translateY(0px)",
+        opacity: 1,
+        from: {
+            opacity: 0,
+            transform: "translateX(-100px)"
+        }   
+    })
+
     return (
         <div className="w-full min-vh-100 d-flex flex-column py-md-4 mx-auto align-items-center h-full mx-1 my-1">
-            <h3 className="black-text text-white" style={{ fontSize: "2.7rem" }}>Meet the Team</h3>
+            <animated.h3 className="black-text text-white" style={{ ...slideSpring, fontSize: "2.7rem" }}>Meet the Team</animated.h3>
             <div className="w-75 mt-5 d-flex flex-column mx-auto justify-content-center align-items-center h-full mx-1 my-1">
             {
                 !loading ?

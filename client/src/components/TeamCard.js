@@ -1,9 +1,21 @@
 import React from "react"
+import { useSpring, animated } from "react-spring";
 
 const TeamCard = ({data}) => {
+
+    const slideSpring = useSpring({
+        delay: 10,
+        transform: "translateY(0px)",
+        opacity: 1,
+        from: {
+            opacity: 0,
+            transform: "translateX(50px)"
+        }   
+    })
+    
     return (
         <div className="col-md-4 col-12 h-50 px-2 my-3">
-            <div className="d-flex flex-column align-items-center">
+            <animated.div style={{ ...slideSpring }} className="d-flex flex-column align-items-center">
                 <img alt={data.name} src={data.photo} width={200} style={{ borderRadius: "50%" }}></img>
                 <div className="d-flex flex-column px-4 justify-content-center align-items-center text-left">
                     <h5 className="bold-text my-1 p-0 text-white" style={{ fontSize: "1.8rem" }}>{data.name}</h5>
@@ -22,7 +34,7 @@ const TeamCard = ({data}) => {
                         }
                     </div>
                 </div>
-            </div>
+            </animated.div>
         </div>
     )
 }

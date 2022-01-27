@@ -31,7 +31,7 @@ const ResourceCard = ({data}) => {
                     }
                 </div>
                 <div className="text-left">
-                    <p style={{ fontSize: "1.4rem" }}>{data.subheading}</p>
+                    <p className="res-text">{data.subheading}</p>
                 </div>
             </div>
         </animated.div>

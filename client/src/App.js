@@ -27,7 +27,7 @@ function App() {
           {/* <Route path="/alumni" component={AlumniPage}></Route> */}
           <Route path="/resources/:type" component={ResourcePage}></Route>
           <Route path="/resources" component={ResourcesPage}></Route>
-          <Route path="/blog" component={BlogPins}></Route>
+          {/* <Route path="/blog" component={BlogPins}></Route> */}
           <Route path="/dev-team" component={DevTeam}></Route> 
         </Switch>
         <Footer />
