@@ -129,15 +129,15 @@ const LandingPage = () => {
                 <form ref={form} className="contact-form">
                     <div className="d-flex flex-column my-1">
                         <label htmlFor="name" className="text-white m-0">Name</label>
-                        <input placeholder="How do we know you?" name="from_name" className="p-2 my-1 bg-transparent" autoComplete="off" style={{ caretColor: "white", color: "white", border: "1px solid #121212" }}></input>
+                        <input placeholder="How do we know you?" required name="from_name" className="p-2 my-1 bg-transparent" autoComplete="off" style={{ caretColor: "white", color: "white", border: "1px solid #121212" }}></input>
                     </div>
                     <div className="d-flex flex-column my-1">
                         <label htmlFor="name" className="text-white m-0">Email ID</label>
-                        <input placeholder="Where do we reach out to you?" name="from_email" className="p-2 my-1 bg-transparent" autoComplete="off" style={{ caretColor: "white", color: "white", border: "1px solid #121212" }}></input>
+                        <input placeholder="Where do we reach out to you?" required name="from_email" className="p-2 my-1 bg-transparent" autoComplete="off" style={{ caretColor: "white", color: "white", border: "1px solid #121212" }}></input>
                     </div>
                     <div className="d-flex flex-column my-1">
                         <label htmlFor="name" className="text-white m-0">Message</label>
-                        <textarea placeholder="What's on your mind?" name="message" className="p-2 my-1 bg-transparent" autoComplete="off" style={{ minHeight: 100, maxHeight: 150, caretColor: "white", color: "white", border: "1px solid #121212" }}></textarea>
+                        <textarea placeholder="What's on your mind?" required name="message" className="p-2 my-1 bg-transparent" autoComplete="off" style={{ minHeight: 100, maxHeight: 150, caretColor: "white", color: "white", border: "1px solid #121212" }}></textarea>
                     </div>
                     <p style={{ display: "none", color: "#5CE1E6" }} id="receive">We have received your message!</p>
                     <p style={{ display: "none", color: "red" }} id="no-receive">Oops! There was a problem sending your message.</p>
