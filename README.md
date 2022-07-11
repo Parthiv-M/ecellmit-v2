@@ -6,9 +6,6 @@ This repository is the codebase for the official website of the E-Cell of MIT, M
 
 [This](https://ecellmit.com) is the second official version of the website. The codebase for the first version can be found [here](https://github.com/Parthiv-M/e-cell-mit).
 
-## Usage of the codebase
-
-To understand the codebase and have it running on your local system, go through the codebase documentation [here]()
 ## Contributors to the project
 
 > Feel free to reach out to us in case you spot bugs or have suggestions for improvement!
